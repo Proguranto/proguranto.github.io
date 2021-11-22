@@ -56,7 +56,67 @@
 					margin-left: 0.75em;
 				}
 
-				&[href="#menu"] {
+				&[href="#year1"] {
+					@include icon(false, solid);
+					@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
+					border-radius: _size(border-radius);
+					box-shadow: inset 0 0 0 2px _palette(border);
+					padding: 0 1.35em;
+
+					&:before {
+						content: '\f0c9';
+						line-height: inherit;
+					}
+
+					&:hover {
+						background-color: _palette(border-bg);
+					}
+
+					&:active {
+						background-color: _palette(border2-bg);
+					}
+				}
+				&[href="#year2"] {
+					@include icon(false, solid);
+					@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
+					border-radius: _size(border-radius);
+					box-shadow: inset 0 0 0 2px _palette(border);
+					padding: 0 1.35em;
+
+					&:before {
+						content: '\f0c9';
+						line-height: inherit;
+					}
+
+					&:hover {
+						background-color: _palette(border-bg);
+					}
+
+					&:active {
+						background-color: _palette(border2-bg);
+					}
+				}
+				&[href="#year3"] {
+					@include icon(false, solid);
+					@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
+					border-radius: _size(border-radius);
+					box-shadow: inset 0 0 0 2px _palette(border);
+					padding: 0 1.35em;
+
+					&:before {
+						content: '\f0c9';
+						line-height: inherit;
+					}
+
+					&:hover {
+						background-color: _palette(border-bg);
+					}
+
+					&:active {
+						background-color: _palette(border2-bg);
+					}
+				}
+				&[href="#year4"] {
 					@include icon(false, solid);
 					@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
 					border-radius: _size(border-radius);
@@ -102,7 +162,34 @@
 					height: inherit;
 					line-height: inherit;
 
-					&[href="#menu"] {
+					&[href="#year1"] {
+						box-shadow: none;
+						padding: 0 1em;
+						border-radius: 0;
+
+						&:hover, &:active {
+							background-color: inherit;
+						}
+					}
+					&[href="#year2"] {
+						box-shadow: none;
+						padding: 0 1em;
+						border-radius: 0;
+
+						&:hover, &:active {
+							background-color: inherit;
+						}
+					}
+					&[href="#year3"] {
+						box-shadow: none;
+						padding: 0 1em;
+						border-radius: 0;
+
+						&:hover, &:active {
+							background-color: inherit;
+						}
+					}
+					&[href="#year4"] {
 						box-shadow: none;
 						padding: 0 1em;
 						border-radius: 0;
@@ -118,7 +205,58 @@
 		@include breakpoint('<=xsmall') {
 			nav {
 				a {
-					&[href="#menu"] {
+					&[href="#year1"] {
+						width: 4em;
+						white-space: nowrap;
+						text-indent: 4em;
+						position: relative;
+
+						&:before {
+							width: inherit;
+							position: absolute;
+							top: 0;
+							left: 0;
+							text-indent: 0;
+							text-align: right;
+							margin-left: 0;
+							padding-right: 1.25em;
+						}
+					}
+					&[href="#year2"] {
+						width: 4em;
+						white-space: nowrap;
+						text-indent: 4em;
+						position: relative;
+
+						&:before {
+							width: inherit;
+							position: absolute;
+							top: 0;
+							left: 0;
+							text-indent: 0;
+							text-align: right;
+							margin-left: 0;
+							padding-right: 1.25em;
+						}
+					}
+					&[href="#year3"] {
+						width: 4em;
+						white-space: nowrap;
+						text-indent: 4em;
+						position: relative;
+
+						&:before {
+							width: inherit;
+							position: absolute;
+							top: 0;
+							left: 0;
+							text-indent: 0;
+							text-align: right;
+							margin-left: 0;
+							padding-right: 1.25em;
+						}
+					}
+					&[href="#year4"] {
 						width: 4em;
 						white-space: nowrap;
 						text-indent: 4em;
